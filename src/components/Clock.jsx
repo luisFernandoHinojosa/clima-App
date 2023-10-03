@@ -11,8 +11,9 @@ export const Clock = () => {
 
     const hours = time.getHours()
     const minutes = time.getMinutes()
+    const formatHours = hours <10 ?`0${hours}`:hours
     const formatMinutes = minutes < 10 ? `0${minutes}` : minutes;
   return (
-    <span>{`${hours}: ${formatMinutes}`}</span>
+    <span>{`${formatHours}: ${formatMinutes}`}</span>
   )
 }

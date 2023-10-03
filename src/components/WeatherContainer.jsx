@@ -24,7 +24,7 @@ export const WeatherContainer = ({weather, isDay}) => {
     const newQuestions =  bgNames
     const copyQuestions = JSON.parse(JSON.stringify(newQuestions))
     setBg(copyQuestions)
-  },[weather])
+  },[])
 
   const day = new Date().getDay()
   const nameDay = {

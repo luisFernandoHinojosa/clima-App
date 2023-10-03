@@ -6,24 +6,46 @@ import bgNames from '../db/bgNames.json'
 export const WeatherContainer = ({weather, isDay}) => {
 
   const [isCelcius, setIsCelcius] = useState(true)
-  const [bgs, setBg] = useState({"01d": "bg1-cs",
-  "02d": "bg2-fc",
-  "03d": "bg3-sc",
-  "04d": "bg4-bc",
-  "09d": "bg5-sr",
-  "10d": "bg6-rain",
-  "11d": "bg7-t",
-  "13d": "bg8-snow",
-  "50d": "bg9-mist",
-  "01n": "bg1-cs",
-  "02n": "bg2-fc",
-  "03n": "bg3-sc",
-  "04n": "bg4-bc",
-  "09n": "bg5-sr",
-  "10n": "bg6-rain",
-  "11n": "bg7-t",
-  "13n": "bg8-snow",
-  "50n": "bg9-mist"})
+  // const [bgs, setBg] = useState({"01d": "bg1-cs",
+  // "02d": "bg2-fc",
+  // "03d": "bg3-sc",
+  // "04d": "bg4-bc",
+  // "09d": "bg5-sr",
+  // "10d": "bg6-rain",
+  // "11d": "bg7-t",
+  // "13d": "bg8-snow",
+  // "50d": "bg9-mist",
+  // "01n": "bg1-cs",
+  // "02n": "bg2-fc",
+  // "03n": "bg3-sc",
+  // "04n": "bg4-bc",
+  // "09n": "bg5-sr",
+  // "10n": "bg6-rain",
+  // "11n": "bg7-t",
+  // "13n": "bg8-snow",
+  // "50n": "bg9-mist"})
+
+  const bgs ={
+    "01d": "bg1-cs",
+    "02d": "bg2-fc",
+    "03d": "bg3-sc",
+    "04d": "bg4-bc",
+    "09d": "bg5-sr",
+    "10d": "bg6-rain",
+    "11d": "bg7-t",
+    "13d": "bg8-snow",
+    "50d": "bg9-mist",
+    "01n": "bg1-cs",
+    "02n": "bg2-fc",
+    "03n": "bg3-sc",
+    "04n": "bg4-bc",
+    "09n": "bg5-sr",
+    "10n": "bg6-rain",
+    "11n": "bg7-t",
+    "13n": "bg8-snow",
+    "50n": "bg9-mist"
+  }
+
   const handleChangeUnit = ()=>{
     setIsCelcius(!isCelcius)
   }  
@@ -37,11 +59,11 @@ export const WeatherContainer = ({weather, isDay}) => {
   }
 
   //pasamos el objeto al bgs del useState
-  useEffect (()=>{
-    const newQuestions =  bgNames
-    const copyQuestions = JSON.parse(JSON.stringify(newQuestions))
-    setBg(copyQuestions)
-  },[])
+  // useEffect (()=>{
+  //   const newQuestions =  bgNames
+  //   const copyQuestions = JSON.parse(JSON.stringify(newQuestions))
+  //   setBg(copyQuestions)
+  // },[])
 
   const day = new Date().getDay()
   const nameDay = {

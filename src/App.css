@@ -4,12 +4,20 @@
     -webkit-backdrop-filter: blur(0.3rem); 
 }
 
+
+.blur-card {
+    border: 2px solid #fafafa;
+    backdrop-filter: blur(0.8rem); 
+    -webkit-backdrop-filter: blur(0.8rem); 
+}
+
 .blur-background2 {
     border: 2px solid #fafafa;
     backdrop-filter: blur(0.8rem); 
     -webkit-backdrop-filter: blur(0.8rem); 
     transition: all .3s ease;
 }
+
 
 .blur-background2:hover{
     transform: scale(.9);

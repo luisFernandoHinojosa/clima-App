@@ -11,6 +11,12 @@
     -webkit-backdrop-filter: blur(0.8rem); 
 }
 
+.blur-card-dark {
+    border: 2px solid #fafafa73;
+    backdrop-filter: blur(0.8rem); 
+    -webkit-backdrop-filter: blur(0.8rem); 
+}
+
 .blur-background2 {
     border: 2px solid #fafafa;
     backdrop-filter: blur(0.8rem); 

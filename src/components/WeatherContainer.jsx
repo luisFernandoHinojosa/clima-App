@@ -82,7 +82,7 @@ export const WeatherContainer = ({weather, isDay}) => {
     <section className={`${isDay?("text-black"):("text-white")} text-center  grid gap-5 justify-items-center`}>
       <h3 className="text-xl font-semibold bg-slate-400/40 p-1 rounded-lg">{weather.name}, {weather.sys.country}</h3>
         <div className="grid gap-2  md:flex">
-          <div className={`grid blur-card ${!isDay&&"dark-bg"} gap-5 md:flex rounded-2xl p-8 ${bgs[weather.weather[0].icon]}`}>
+          <div className={`grid ${isDay?("blur-card"):("dark-bg blur-card-dark")} gap-5 md:flex rounded-2xl p-8 ${bgs[weather.weather[0].icon]}`}>
             {/* section superior */}
             <article className="grid grid-cols-2 items-center p-3 blur-background rounded-2xl">
               <h4 className="col-span-2 text-lg capitalize">{weather.weather[0].description}</h4>
@@ -102,7 +102,7 @@ export const WeatherContainer = ({weather, isDay}) => {
           </div>
 
         
-          <article className={`blur-card flex place-content-around p-8  ${bgs[weather.weather[0].icon]} rounded-2xl md:flex-col items-center gap-3 ${!isDay&&"dark-bg"}`}>
+          <article className={`flex place-content-around p-8  ${bgs[weather.weather[0].icon]} rounded-2xl md:flex-col items-center gap-3 ${isDay?("blur-card"):("dark-bg blur-card-dark")}`}>
               <span className="blur-background rounded-lg p-3">Maxima: {changeUnitTem(weather.main.temp_max)}</span>
 
               <div className="grid blur-background rounded-lg p-3">

@@ -1,0 +1,85 @@
+.blur-background {
+    border: 2px solid #fafafa3e;
+    backdrop-filter: blur(0.1rem); 
+    -webkit-backdrop-filter: blur(0.3rem); 
+}
+
+.blur-background2 {
+    border: 2px solid #fafafa;
+    backdrop-filter: blur(0.8rem); 
+    -webkit-backdrop-filter: blur(0.8rem); 
+    transition: all .3s ease;
+}
+
+.blur-background2:hover{
+    transform: scale(.9);
+    background-color: rgba(49, 78, 78, 0.45);
+}
+
+.btnBuscar{
+    border: 2px solid white;
+}
+
+.gradient-bg{
+    background-image: radial-gradient(circle at 36.19% 53.7%, #00ffff 0, #00e5ff 25%, #12a4ef 50%, #22689a 75%, #183550 100%);
+}
+
+.bg1-cs{
+    background-image: url("./images/bg1-cs.jpg");
+    background-size: cover;
+    background-position: center;   
+}
+
+.bg2-fc{
+    background-image: url("./images/bg2-fc.jpg");
+    background-size: cover;
+    background-position: center; 
+    
+}
+
+.dark-bg{
+    background-color: rgba(0, 0, 0, 0.657);
+    background-blend-mode: soft-light;
+}
+
+.bg3-sc{
+    background-image: url("./images/bg3-sc.jpg");
+    background-size: cover;
+    background-position: center;   
+}
+
+.bg4-bc{
+    background-image: url("./images/bg4-bc.jpg");
+    background-size: cover;
+    background-position: center;   
+}
+
+.bg5-sr{
+    background-image: url("./images/bg5-sr.jpg");
+    background-size: cover;
+    background-position: center;   
+}
+
+.bg6-rain{
+    background-image: url("./images/bg6-rain.jpg");
+    background-size: cover;
+    background-position: center;   
+}
+
+.bg7-t{
+    background-image: url("./images/bg7-t.jpg");
+    background-size: cover;
+    background-position: center;   
+}
+
+.bg8-snow{
+    background-image: url("./images/bg8-snow.jpg");
+    background-size: cover;
+    background-position: center;   
+}
+
+.bg9-mist{
+    background-image: url("./images/bg9-mist.jpg");
+    background-size: cover;
+    background-position: center;   
+}
